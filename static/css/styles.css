@@ -302,7 +302,7 @@ footer{
     gap: 4vw;
     & .product-card{
       &:nth-child(1) .product-card-header{
-        background-image: url(../img/thumbnail/mailliot-grape.jpg);
+        background-image: url(/static/img/thumbnail/mailliot-grape.jpg);
       }
       &:nth-child(2) .product-card-header{
         background-image: url(../img/thumbnail/unicorn-set.jpg);
