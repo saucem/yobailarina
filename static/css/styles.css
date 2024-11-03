@@ -302,13 +302,13 @@ footer{
     gap: 4vw;
     & .product-card{
       &:nth-child(1) .product-card-header{
-        background-image: url(/static/img/thumbnail/mailliot-grape.jpg);
+        background-image: url(../img/thumbnail/mailliot-grape.jpg);
       }
       &:nth-child(2) .product-card-header{
-        background-image: url(/static/img/thumbnail/unicorn-set.jpg);
+        background-image: url(../img/thumbnail/unicorn-set.jpg);
       }
       &:nth-child(3) .product-card-header{
-        background-image: url(/static/img/thumbnail/accesories-gloves.jpg);
+        background-image: url(../img/thumbnail/accesories-gloves.jpg);
       }
     }
   }
@@ -379,13 +379,13 @@ footer{
 
 .card-feedback{
   &:first-child .card-feedback-image .customer-photo{
-    background-image: url(../static/img/customer-01.jpg);
+    background-image: url(../img/customer-01.jpg);
   }
   &:nth-child(2) .card-feedback-image .customer-photo{
-    background-image: url(../static/img/customer-02.jpg);
+    background-image: url(../img/customer-02.jpg);
   }
   &:last-child .card-feedback-image .customer-photo{
-    background-image: url(../static/img/customer-03.jpg);
+    background-image: url(../img/customer-03.jpg);
   }
 }
 
