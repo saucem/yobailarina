@@ -316,8 +316,8 @@ footer{
 
 .product-card{
   position: relative;
-  width: 25vw;
-  min-height: 50vh;
+  width: 250px;
+  min-height: 60vh;
   background-color: antiquewhite;
   border-radius: 1rem;
   overflow: hidden;
@@ -364,13 +364,12 @@ footer{
   }
   & h2{
     color: var(--coffee-dark);
-    font-size: 3vw;
-    text-align: center;
   }
 }
 
 .card-feedback{
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
   justify-content: space-evenly;
@@ -559,6 +558,30 @@ footer{
         grid-row: 1 / span 1;
       }
     }
+  }
+
+  #feedback .container-grid{
+    max-width: 100%;
+  }
+
+  .card-feedback-image{
+    max-width: 50%;
+    flex: 1 100%;
+  }
+
+  .card-feedback-text{
+    flex: 1 100%;
+  }
+
+  #contact .container{
+    max-width: 100%;
+  }
+
+  .form-wrapper{
+    & img{
+      display: none;
+    }
+
   }
 
 }
