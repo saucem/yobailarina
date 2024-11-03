@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Carrito de Compra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/styles.css">
+  <script src="https://kit.fontawesome.com/9af57c8121.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav-bar outfit-regular">
+      <a href="#" class="nav-brand"><img src="./static/img/logo.png
+        " alt="logo">Yo, Bailarina</a>
+      <ul>
+        <li class="nav-menu">
+          <a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="container-flex justify-content-end">
+        <div class="hero-message outfit-regular">
+          <h2 class="hero-subtitle">Yo, Bailarina</h2>
+          <h1 class="hero-title">Vestuarios para ballet y patín artístico</h1>
+          <!-- <p class="hero-pitch">Tu sueño hecho vestuario</p> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-grid" id="main-container">
+      <div class="video-container">
+        <video controls autoplay loop>
+          <source src="./static/video/ballet_shoes_close.mp4" type="video/mp4">
+          <track src="./static/video/subtitles/sub-es.vtt" srclang="es" label="Español" default>
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+      <div class="main-text outfit-regular">
+        <h2 class="section-title">Vivamos la danza</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat quo ad accusamus ut, iste fugit dolores numquam eveniet fuga porro, beatae culpa veniam eum molestiae. Consectetur, quasi. Perferendis, voluptates?</p>
+        <a href="#contact" class="btn btn-primary">Quiero mi vestuario</a>
+      </div>
+      <div class="secondary-text outfit-regular">
+        <h3>Un texto</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eos inventore? Asperiores consequatur ex fuga dolore accusantium maxime quod! Aliquid quia provident labore voluptatum ipsa, doloremque aperiam magnam vero saepe.</p>
+      </div>
+      <div class="secondary-text outfit-regular">
+        <h3>Otro texto</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eos inventore? Asperiores consequatur ex fuga dolore accusantium maxime quod! Aliquid quia provident labore voluptatum ipsa, doloremque aperiam magnam vero saepe.</p>
+      </div>
+      <div class="secondary-text outfit-regular">
+        <h3>Otro más</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eos inventore? Asperiores consequatur ex fuga dolore accusantium maxime quod! Aliquid quia provident labore voluptatum ipsa, doloremque aperiam magnam vero saepe.</p>
+      </div>
+    </div>
+  </main>
+  <section id="works">
+    <div class="container-grid outfit-regular" id="works-container">
+      <div class="work-image-wrapper"><span class="work-title">Mailliots</span></div>
+      <div class="work-image-wrapper"><span class="work-title">Bouquets</span></div>
+      <div class="work-image-wrapper"><span class="work-title">Tutus</span></div>
+    </div>
+  </section>
+  <section id="promoted-products">
+    <div class="container">
+      <h2 class="section-title text-center">Nuestros destacados</h2>
+    </div>
+    <div class="container-flex">
+      <div class="product-card">
+        <a href="#" class="product-link">
+          <div class="product-card-header"></div>
+          <div class="product-card-body">
+            <h3 class="product-card-body-title">Mailliot Uva</h3>
+            <p class="product-card-body-description">
+              Mailliot para ballet color Uva con recorte tipo "V"<span class="product-size">Talles: S - M - L - XL</span>
+            </p>
+          </div>
+        </a>
+        <div class="product-card-footer">
+          <a href="#" class="btn btn-small btn-secondary">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Agregar
+          </a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="#" class="product-link">
+          <div class="product-card-header"></div>
+          <div class="product-card-body">
+            <h3 class="product-card-body-title">Set Unicornio</h3>
+            <p class="product-card-body-description">
+              Conjunto infantil personalizado para eventos<span class="product-size">Talles: 0 - 2 - 4 - 6 - 8</span>
+            </p>
+          </div>
+        </a>
+        <div class="product-card-footer">
+          <a href="#" class="btn btn-small btn-secondary">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Agregar
+          </a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="#" class="product-link">
+          <div class="product-card-header"></div>
+          <div class="product-card-body">
+            <h3 class="product-card-body-title">Guantes Frost</h3>
+            <p class="product-card-body-description">
+              Guantes con aplique de piedras para patinaje artístico<span class="product-size">Talles: S - M - L</span>
+            </p>
+          </div>
+        </a>
+        <div class="product-card-footer">
+          <a href="#" class="btn btn-small btn-secondary">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Agregar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <div class="container-grid">
+      <div class="card-feedback">
+        <div class="card-feedback-image">
+          <div class="customer-photo"></div>
+          <span class="qualifier">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </span>
+        </div>
+        <div class="card-feedback-text">
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium nihil iure commodi architecto aliquid enim quae iusto, expedita perferendis harum aliquam molestias eligendi quidem voluptatem veniam molestiae, fugit in!</blockquote>
+          <cite>Customer name</cite>
+        </div>
+      </div>
+      <div class="card-feedback">
+        <div class="card-feedback-image">
+          <div class="customer-photo"></div>
+          <span class="qualifier">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+        <div class="card-feedback-text">
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium nihil iure commodi architecto aliquid enim quae iusto, expedita perferendis harum aliquam molestias eligendi quidem voluptatem veniam molestiae, fugit in!</blockquote>
+          <cite>Customer name</cite>
+        </div>
+      </div>
+      <div class="card-feedback">
+        <div class="card-feedback-image">
+          <div class="customer-photo"></div>
+          <span class="qualifier">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+        <div class="card-feedback-text">
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium nihil iure commodi architecto aliquid enim quae iusto, expedita perferendis harum aliquam molestias eligendi quidem voluptatem veniam molestiae, fugit in!</blockquote>
+          <cite>Customer name</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container text-secondary">
+      <h2>Contacto</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam excepturi ipsa quia, recusandae unde aliquid dolor? Harum, corporis. Fuga quam provident error dolorum, id enim nostrum repellendus sunt dolorem assumenda.</p>
+    </div>
+    <div class="container-flex">
+      <div class="form-wrapper">
+        <!-- <div class="wrapper-image"></div> -->
+         <img src="./static/img/ballet-dancer-bw.jpg" alt="Bailarina" class="wrapper-image">
+        <form action="https://formspree.io/f/xeoqapry" method="post" class="outfit-regular">
+          <div class="input-group">
+            <label for="name">Tu nombre</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input-group">
+            <label for="name">Un teléfono para que conversemos</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input-group">
+            <label for="mail">Una dirección de mail (prometemos no molestar)</label>
+            <input type="email" name="mail" id="mail">
+          </div>
+          <div class="input-group">
+            <label for="message">Ahora sí, tu consulta</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary outfit-regular">Enviar!</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+      <div class="container-flex footer-nav">
+        <nav class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#promoted-products">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ayuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carrito</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-bar social">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <img src="/static/img/logo.png" alt="logo" width="32">
+      </div>
+      <div class="container">
+        <span class="copyright">Yo, Bailarina &copy; 2024 - Todos los derechos reservados</span>
+        <span class="developer">Diseño: Saucem</span>
+      </div>
+  </footer>
+</body>
+</html>
