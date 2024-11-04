@@ -118,6 +118,7 @@ i{
 .section-title{
   font-size: 3vw;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .nav-bar{
@@ -326,7 +327,7 @@ i{
   flex-direction: column;
   justify-content: space-between;
   width: 250px;
-  min-height: 60vh;
+  /* min-height: 60vh; */
   background-color: antiquewhite;
   border-radius: 1rem;
   overflow: hidden;
