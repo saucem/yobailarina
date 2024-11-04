@@ -53,7 +53,7 @@
           Tu navegador no soporta la reproducción de video.
         </video>
       </div>
-      <div class="main-text outfit-regular">
+      <div class="main-text">
         <h2 class="section-title">Vivamos la danza</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat quo ad accusamus ut, iste fugit dolores numquam eveniet fuga porro, beatae culpa veniam eum molestiae. Consectetur, quasi. Perferendis, voluptates?</p>
         <a href="#contact" class="btn btn-primary">Quiero mi vestuario</a>
@@ -122,7 +122,7 @@
         <a href="#" class="product-link">
           <div class="product-card-header"></div>
           <div class="product-card-body">
-            <h3 class="product-card-body-title">Guantes Frost</h3>
+            <h3 class="product-card-body-title">Guantes Frosted</h3>
             <p class="product-card-body-description">
               Guantes con aplique de piedras para patinaje artístico<span class="product-size">Talles: S - M - L</span>
             </p>
@@ -153,7 +153,7 @@
         </div>
         <div class="card-feedback-text">
           <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium nihil iure commodi architecto aliquid enim quae iusto, expedita perferendis harum aliquam molestias eligendi quidem voluptatem veniam molestiae, fugit in!</blockquote>
-          <cite>Customer name</cite>
+          <cite>Ana Torres, Bailarina</cite>
         </div>
       </div>
       <div class="card-feedback">
@@ -169,7 +169,7 @@
         </div>
         <div class="card-feedback-text">
           <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium nihil iure commodi architecto aliquid enim quae iusto, expedita perferendis harum aliquam molestias eligendi quidem voluptatem veniam molestiae, fugit in!</blockquote>
-          <cite>Customer name</cite>
+          <cite>Alicia Morales, Profesora de Ballet</cite>
         </div>
       </div>
       <div class="card-feedback">
@@ -184,7 +184,7 @@
         </div>
         <div class="card-feedback-text">
           <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium nihil iure commodi architecto aliquid enim quae iusto, expedita perferendis harum aliquam molestias eligendi quidem voluptatem veniam molestiae, fugit in!</blockquote>
-          <cite>Customer name</cite>
+          <cite>Milagros Hansen, Estudiante</cite>
         </div>
       </div>
     </div>
@@ -197,24 +197,27 @@
     <div class="container-flex">
       <div class="form-wrapper">
         <img src="./static/img/ballet-dancer-bw.jpg" alt="Bailarina" class="wrapper-image">
-        <form action="https://formspree.io/f/xeoqapry" method="post" class="outfit-regular">
+        <form action="https://formspree.io/f/xeoqapry" method="post" class="form-contact">
           <div class="input-group">
             <label for="name">Tu nombre</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
           </div>
           <div class="input-group">
             <label for="name">Un teléfono para que conversemos</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
           </div>
           <div class="input-group">
             <label for="mail">Una dirección de mail (prometemos no molestar)</label>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="mail" id="mail" required>
           </div>
           <div class="input-group">
             <label for="message">Ahora sí, tu consulta</label>
             <textarea name="message" id="message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary outfit-regular">Enviar!</button>
+          <button type="submit" class="btn btn-primary outfit-regular">
+            <i class="fa-solid fa-paper-plane"></i>
+            Enviar!
+          </button>
         </form>
       </div>
     </div>
