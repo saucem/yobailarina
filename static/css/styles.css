@@ -507,7 +507,7 @@ footer{
 }
 
 @media (width < 512px){
-  .nav-bar{
+  header .nav-bar{
     & .nav-item{
       display: none;
     }
@@ -578,6 +578,7 @@ footer{
   }
 
   .form-wrapper{
+    height: auto;
     & img{
       display: none;
     }
