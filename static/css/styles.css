@@ -327,7 +327,6 @@ i{
   flex-direction: column;
   justify-content: space-between;
   width: 250px;
-  /* min-height: 60vh; */
   background-color: antiquewhite;
   border-radius: 1rem;
   overflow: hidden;
@@ -358,7 +357,6 @@ i{
 }
 
 .product-card-footer{
-  /* position: absolute; */
   bottom: 0;
   display: flex;
   width: 100%;
@@ -454,9 +452,6 @@ i{
   background-color: white;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
-  background-position: left center;
-  background-size: contain;
-  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -465,6 +460,7 @@ i{
   flex-direction: column;
   & button{
     align-self: end;
+    margin-bottom: 0;
   }
 }
 
@@ -525,7 +521,15 @@ i{
   color: var(--black-olive-light);
 }
 
-@media (width < 512px){
+@media (width > 512px) and (width <= 768px){
+  .form-wrapper{
+    width: 80vw;
+    min-width: 300px;
+    height: 80vh;
+  }
+}
+
+@media (width <= 512px){
   header .nav-bar{
     & .nav-item{
       display: none;
