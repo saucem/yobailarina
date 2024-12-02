@@ -544,6 +544,7 @@ i{
     & .container-flex{
       justify-content: center;
     }
+  background-image: linear-gradient(#ffffff00,#ffffff00, var(--coffee-dark)), url(../img/hero-background.jpg);
   }
 
   .hero-message{
