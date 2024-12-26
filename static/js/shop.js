@@ -42,7 +42,7 @@ for (let index=0; index < products.length; index++)
 productCards += `
   <div class="product-card">
   <a href="#" class="product-link">
-    <div class="product-card-header" style="background-image: url(../static/img/thumbnail/${products[index].image})"></div>
+    <div class="product-card-header" style="background-image: url(./static/img/thumbnail/${products[index].image})"></div>
     <div class="product-card-body">
       <h3 class="product-card-body-title">${products[index].name}</h3>
       <p class="product-card-body-description">
