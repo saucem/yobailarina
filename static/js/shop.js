@@ -2,9 +2,9 @@ console.log("Running JS");
 
 const products = [
   {
-    name: "Mailliot Uva",
+    name: "Maillot Uva",
     image: "mailliot-grape.jpg",
-    description: 'Mailliot para ballet color Uva con recorte tipo "V"',
+    description: 'Maillot para ballet color Uva con recorte tipo "V"',
     sizes: "Talles: S - M - L - XL",
     price: 50000
   },
