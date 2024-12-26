@@ -24,6 +24,8 @@ const products = [
   }
 ];
 
+const navMenu = document.querySelector(".nav-menu a i");
+const navItems = document.querySelectorAll("#main-menu .nav-item");
 const productsContainer = document.getElementById("productsContainer");
 const cartCounter = document.getElementById("cart-counter");
 const shopCart = document.querySelector("#shop-cart-wrapper ul");
@@ -36,6 +38,7 @@ let shopCartTotal = 0;
 let shopCartCount = 0;
 let productCards = "";
 
+console.log(navItems);
 
 // Carga de productos
 for (let index=0; index < products.length; index++)
@@ -98,3 +101,21 @@ function checkOut(){
   };
 }
 shopCartCheckout.addEventListener("click", checkOut);
+
+// Agregado de funcionalidad del menú hamburguesa
+function dropDown(){
+  for(let index=0; index < navItems.length; index++){
+    if(navItems[index].classList.contains("nav-collapse")){
+      navItems[index].classList.remove("nav-collapse");
+      navItems[index].classList.add("nav-show");
+      navMenu.classList.remove("fa-bars");
+      navMenu.classList.add("fa-times");
+    }else{
+      navItems[index].classList.remove("nav-show");
+      navItems[index].classList.add("nav-collapse");
+      navMenu.classList.remove("fa-times");
+      navMenu.classList.add("fa-bars");
+    };
+  }
+}
+navMenu.addEventListener("click", dropDown);
