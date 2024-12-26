@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Carrito de Compra</title>
+  <title>Yo, Bailarina</title>
+  <link rel="shortcut icon" href="./static/img/logo_white.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -21,16 +22,16 @@
           <a class="nav-link" href="#" title="Menu"><i class="fa-solid fa-bars"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="product.html">Productos</a>
+          <a class="nav-link" href="#promoted-products">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contacto</a>
+          <a class="nav-link" href="#contact">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="help.html">Ayuda</a>
+          <a class="nav-link" href="#contact">Ayuda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="cart.html" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a class="nav-link" href="#shop-cart-wrapper" title="Carrito"><i class="fa-solid fa-cart-shopping"></i><span id="cart-counter">0</span></a>
         </li>
       </ul>
     </nav>
@@ -39,7 +40,6 @@
         <div class="hero-message outfit-regular">
           <h2 class="hero-subtitle">Yo, Bailarina</h2>
           <h1 class="hero-title">Vestuarios para ballet y patín artístico</h1>
-          <!-- <p class="hero-pitch">Tu sueño hecho vestuario</p> -->
         </div>
       </div>
     </div>
@@ -83,58 +83,18 @@
     <div class="container">
       <h2 class="section-title">Nuestros destacados</h2>
     </div>
-    <div class="container-flex">
-      <div class="product-card">
-        <a href="#" class="product-link">
-          <div class="product-card-header"></div>
-          <div class="product-card-body">
-            <h3 class="product-card-body-title">Mailliot Uva</h3>
-            <p class="product-card-body-description">
-              Mailliot para ballet color Uva con recorte tipo "V"<span class="product-size">Talles: S - M - L - XL</span>
-            </p>
-          </div>
-        </a>
-        <div class="product-card-footer">
-          <a href="#" class="btn btn-small btn-secondary">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Agregar
-          </a>
+    <div class="container-flex" id="productsContainer"><!-- Productos cargados por JS --></div>
+    <div class="container" id="shop-cart-wrapper"><!-- Productos en el carrito de compras, se muestra por JS -->
+      <h2 class="text-center">Productos en el carrito</h2>
+      <ul></ul>
+      <div class="shop-cart-footer d-flex flex-wrap justify-content-between align-items-center">
+        <span>Total a pagar: $0</span>
+        <div class="d-flex btn-group">
+          <button class="btn btn-primary outfit-regular" id="check-out">Ir a pagar</button>
+          <button class="btn btn-tertiary outfit-regular" id="clear-cart"><i class="fa fa-trash"></i>Vaciar</button>
         </div>
       </div>
-      <div class="product-card">
-        <a href="#" class="product-link">
-          <div class="product-card-header"></div>
-          <div class="product-card-body">
-            <h3 class="product-card-body-title">Set Unicornio</h3>
-            <p class="product-card-body-description">
-              Conjunto infantil personalizado para eventos<span class="product-size">Talles: 0 - 2 - 4 - 6 - 8</span>
-            </p>
-          </div>
-        </a>
-        <div class="product-card-footer">
-          <a href="#" class="btn btn-small btn-secondary">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Agregar
-          </a>
-        </div>
-      </div>
-      <div class="product-card">
-        <a href="#" class="product-link">
-          <div class="product-card-header"></div>
-          <div class="product-card-body">
-            <h3 class="product-card-body-title">Guantes Frosted</h3>
-            <p class="product-card-body-description">
-              Guantes con aplique de piedras para patinaje artístico<span class="product-size">Talles: S - M - L</span>
-            </p>
-          </div>
-        </a>
-        <div class="product-card-footer">
-          <a href="#" class="btn btn-small btn-secondary">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Agregar
-          </a>
-        </div>
-      </div>
+      <p class="error-message outfit-regular"></p>
     </div>
   </section>
   <section id="feedback">
@@ -262,9 +222,10 @@
         <img src="./static/img/logo.png" alt="logo" width="32">
       </div>
       <div class="container">
-        <span class="copyright">Yo, Bailarina &copy; 2024 - Todos los derechos reservados</span>
+        <span class="copyright">Yo, Bailarina - 2024</span>
         <span class="developer">Diseño: Saucem</span>
       </div>
   </footer>
+  <script src="/static/js/shop.js"></script>
 </body>
 </html>

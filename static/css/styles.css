@@ -23,6 +23,7 @@
 
 body{
   font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
 }
 
 li{
@@ -97,6 +98,14 @@ i{
   justify-content: end;
 }
 
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
 .w-100{width: 100%;}
 
 .text-center {
@@ -114,6 +123,18 @@ i{
 .text-tertiary{
   color: var(--black-olive);
 }
+
+/* Visualization start*/
+
+.d-none{display: none;}
+.d-block{display: block;}
+.d-flex{display: flex;}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+/* Visualization end */
 
 .section-title{
   font-size: 3vw;
@@ -273,6 +294,7 @@ i{
   padding: 0.6rem 1rem;
   border: none;
   border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
 .btn-small{
@@ -296,6 +318,21 @@ i{
   }
 }
 
+.btn-tertiary{
+  color: var(--silver);
+  background-color:var(--black-olive-light);
+  &:hover{
+    background-color:var(--black-olive);
+  }
+}
+
+.btn-group button{
+  margin-left: 0.5rem;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
 #promoted-products{
   background-color: cadetblue;
   padding-bottom: 2rem;
@@ -308,17 +345,6 @@ i{
     justify-content: center;
     align-items: center;
     gap: 4vw;
-    & .product-card{
-      &:nth-child(1) .product-card-header{
-        background-image: url(../img/thumbnail/mailliot-grape.jpg);
-      }
-      &:nth-child(2) .product-card-header{
-        background-image: url(../img/thumbnail/unicorn-set.jpg);
-      }
-      &:nth-child(3) .product-card-header{
-        background-image: url(../img/thumbnail/accesories-gloves.jpg);
-      }
-    }
   }
 }
 
@@ -337,7 +363,6 @@ i{
   }
 }
 
-
 .product-card-header{
   background-size: cover;
   background-position: top center;
@@ -354,6 +379,10 @@ i{
     display: block;
     margin-top: 0.5rem;
   }
+  & .product-price{
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
 }
 
 .product-card-footer{
@@ -361,6 +390,38 @@ i{
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+#shop-cart-wrapper{
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 80%;
+  max-width: 860px;
+  min-width: 400px;
+  color: var(--black-olive);
+  background-color: rgba(250, 235, 215, .5);
+  border-radius: 1rem;
+  & h2{
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+.shop-cart-footer{
+  margin-top: 1rem;
+  & span{
+    margin-right: 0.5rem;
+  }
+}
+
+.shop-cart-thumbnail{
+  vertical-align: middle;
+}
+
+.error-message{
+  text-align: center;
+  color: red;
+  font-weight: bold;
 }
 
 #feedback{
@@ -544,7 +605,7 @@ i{
     & .container-flex{
       justify-content: center;
     }
-  background-image: linear-gradient(#ffffff00,#ffffff00, var(--coffee-dark)), url(../img/hero-background.jpg);
+  background-image: linear-gradient(#ffffff00 70%, var(--coffee-dark)), url(../img/hero-background.jpg);
   }
 
   .hero-message{
